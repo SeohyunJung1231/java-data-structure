@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="747ff1f5-c4c4-416b-a6b3-94ac776c8bec" name="Changes" comment="STACK - 스택 자료구조 추가&#10;&#10;* StackInterface 추가&#10;* 2가지 구현체 추가&#10;    * ArrayStack&#10;    * LinkedListStack&#10;    * InheritedStack : 리스트 상속하여 구현&#10;    * ListStack : 리스트 컴포지션하여 구현&#10;* 스택 응용 알고리즘 문제를 테스트코드에 추가&#10;    * 문자열 뒤집기&#10;    * 후위 연산법">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="747ff1f5-c4c4-416b-a6b3-94ac776c8bec" name="Changes" comment="temp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/QueueInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/reuse/InheritedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/queue/reuse/ListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/queue/QueueApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/queue/QueueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/stack/ArrayStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +85,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.queue" />
       <recent name="org.example.stack" />
       <recent name="org.example.list" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StackApplicationTest.calculatePostfix">
-    <configuration name="ArrayStackTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.QueueApplicationTest.palindromeTest">
+    <configuration name="ArrayQueueTest.capacityTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -97,7 +104,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.stack.ArrayStackTest&quot;" />
+            <option value="&quot;org.example.queue.ArrayQueueTest.capacityTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -107,7 +114,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArrayStackTest.popAllTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArrayQueueTest.clearTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -120,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.stack.ArrayStackTest.popAllTest&quot;" />
+            <option value="&quot;org.example.queue.ArrayQueueTest.clearTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +137,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StackApplicationTest.calculatePostfix" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArrayQueueTest.operatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +150,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.stack.StackApplicationTest.calculatePostfix&quot;" />
+            <option value="&quot;org.example.queue.ArrayQueueTest.operatorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -153,7 +160,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StackApplicationTest.reverseString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QueueApplicationTest.palindromeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.stack.StackApplicationTest.reverseString&quot;" />
+            <option value="&quot;org.example.queue.QueueApplicationTest.palindromeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,7 +183,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="StackTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,7 +196,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.stack.StackTest&quot;" />
+            <option value="&quot;org.example.queue.QueueTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StackApplicationTest.calculatePostfix" />
-        <item itemvalue="Gradle.StackApplicationTest.reverseString" />
-        <item itemvalue="Gradle.StackTest" />
-        <item itemvalue="Gradle.ArrayStackTest.popAllTest" />
-        <item itemvalue="Gradle.ArrayStackTest" />
+        <item itemvalue="Gradle.QueueApplicationTest.palindromeTest" />
+        <item itemvalue="Gradle.QueueTest" />
+        <item itemvalue="Gradle.ArrayQueueTest.clearTest" />
+        <item itemvalue="Gradle.ArrayQueueTest.capacityTest" />
+        <item itemvalue="Gradle.ArrayQueueTest.operatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677059209552</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="temp">
+      <created>1677059351594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677059351594</updated>
+    </task>
+    <task id="LOCAL-00005" summary="temp">
+      <created>1677059365330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677059365330</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +278,8 @@
     <MESSAGE value="git init" />
     <MESSAGE value="LIST - 리스트 자료구조 추가&#10;&#10;* ListInterface 추가&#10;* 4가지 구현체 추가&#10;    * ArrayList&#10;    * LinkedList (one-way)&#10;    * CircularLinkedList (one-way)&#10;    * CircularDoublyLinkedList" />
     <MESSAGE value="STACK - 스택 자료구조 추가&#10;&#10;* StackInterface 추가&#10;* 2가지 구현체 추가&#10;    * ArrayStack&#10;    * LinkedListStack&#10;    * InheritedStack : 리스트 상속하여 구현&#10;    * ListStack : 리스트 컴포지션하여 구현&#10;* 스택 응용 알고리즘 문제를 테스트코드에 추가&#10;    * 문자열 뒤집기&#10;    * 후위 연산법" />
-    <option name="LAST_COMMIT_MESSAGE" value="STACK - 스택 자료구조 추가&#10;&#10;* StackInterface 추가&#10;* 2가지 구현체 추가&#10;    * ArrayStack&#10;    * LinkedListStack&#10;    * InheritedStack : 리스트 상속하여 구현&#10;    * ListStack : 리스트 컴포지션하여 구현&#10;* 스택 응용 알고리즘 문제를 테스트코드에 추가&#10;    * 문자열 뒤집기&#10;    * 후위 연산법" />
+    <MESSAGE value="temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="temp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

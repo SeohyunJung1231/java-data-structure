@@ -54,4 +54,7 @@ public class ArrayStack<E> implements StackInterface<E> {
     private boolean isFull() {
         return (topIndex == stack.length - 1);
     }
+
+    // 특징
+    // 1. stack 배열 자체를 관리하는게 아니라, topIndex 로 관리한다!
 }
