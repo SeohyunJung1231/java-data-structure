@@ -4,6 +4,9 @@ import org.example.stack.LinkedListStack;
 import org.example.stack.StackInterface;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class QueueApplicationTest {
@@ -25,5 +28,14 @@ public class QueueApplicationTest {
         // 스택과 큐에서 하나씩 원소를 뺄 때, 모두 값들이 같은지 확인한다
         while (!stack.isEmpty() && stack.pop() == queue.dequeue()) ;
         return stack.isEmpty();
+    }
+
+    public int[] solution(int[] arr) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.push(arr[0]);
+        for (int element : arr) {
+            if (element != stack.peek()) stack.push(element);
+        }
+        return stack.stream().mapToInt(i -> i).toArray();
     }
 }
